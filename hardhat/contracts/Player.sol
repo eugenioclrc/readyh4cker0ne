@@ -1,5 +1,8 @@
 pragma solidity 0.8;
 
+/// @title Player contract interface
+/// @notice Keeps track of players names and if the pass the tutorial
+/// @dev Explain to a developer any extra details
 contract Player {
 	mapping(address => uint) public playerLockUntil;
 	mapping(address => bytes32) public playerName;
