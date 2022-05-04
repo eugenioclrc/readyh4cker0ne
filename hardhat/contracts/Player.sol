@@ -14,7 +14,7 @@ contract Player {
 
 	function createPlayer(bytes32 _name) public {
 		playerName[msg.sender] = _name;
-		if(playerLockUntil[msg.sender] == 0) {
+		if (playerLockUntil[msg.sender] == 0) {
 			playerLockUntil[msg.sender] = block.timestamp + 5 * 365 days;
 			emit CreatePlayer(msg.sender, _name);
 		} else {
