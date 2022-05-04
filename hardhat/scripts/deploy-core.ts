@@ -1,7 +1,7 @@
-import { ethers } from "hardhat";
+import { ethers, network } from "hardhat";
+
 
 async function main() {
-
   const Player = await ethers.getContractFactory("Player");
   const player = await Player.deploy();
 
@@ -13,7 +13,6 @@ async function main() {
   const ctfs = await CTFs.deploy(player.address);
 
   await ctfs.deployed();
-
   console.log("Main CTFs deployed to:", ctfs.address);
 }
 

@@ -12,6 +12,7 @@
 	} from '$lib/store';
 
 	import Contract from '$lib/Contract.svelte';
+	import Contract2 from '$lib/Contract.md';
 	import getContract from '../contracts/contracts';
   import JSConfetti from 'js-confetti'
 
@@ -137,10 +138,10 @@
           </div>
         {/if}
       </div>
-			<div class="divider">CODE</div>
+			<div class="divider"><a href="https://mumbai.polygonscan.com/address/0x5382bec2a5f3abb9ef9d1759161dc795575819a5#code" target="_blank" class="link link-secondary">CODE</a></div>
 			<div class="flex w-full flex-col text-left">
-				<div class="mockup-code mx-auto w-full flex-grow shadow-lg text-sm ">
-    			<Contract />
+				<div class="mockup-code mx-auto w-full flex-grow shadow-lg text-sm" style="background: #272822">
+    			<Contract2 />
   			</div>
 			</div>
 		</div>
@@ -172,10 +173,10 @@
 					{/if}
 				</div>
   		</div>
-			<div class="divider">CODE</div>
+			<div class="divider"><a href="https://mumbai.polygonscan.com/address/0x5382bec2a5f3abb9ef9d1759161dc795575819a5#code" target="_blank" class="link link-secondary">CODE</a></div>
 			<div class="flex w-full flex-col text-left">
-				<div class="mockup-code mx-auto w-full flex-grow shadow-lg text-sm ">
-    			<Contract />
+				<div class="mockup-code mx-auto w-full flex-grow shadow-lg text-sm" style="background: #272822">
+    			<Contract2 />
   			</div>
 			</div>
 		</div>

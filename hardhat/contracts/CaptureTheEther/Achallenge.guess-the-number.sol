@@ -6,7 +6,7 @@ contract ChallengeGuessTheNumber is ICTF {
     uint8 answer = 42;
 
     constructor() payable {
-        require(msg.value == 1 ether, "You must pay 1 ether to play");
+        require(msg.value == 0.01 ether, "You must pay 0.01 ether to play");
     }
 
     function isComplete() public view returns (bool) {
@@ -14,10 +14,10 @@ contract ChallengeGuessTheNumber is ICTF {
     }
 
     function guess(uint8 n) public payable {
-        require(msg.value == 1 ether, "You must pay 1 ether to play");
+        require(msg.value == 0.01 ether, "You must pay 0.01 ether to play");
 
         if (n == answer) {
-            payable(msg.sender).transfer(2 ether);
+            payable(msg.sender).transfer(address(this).balance);
         }
     }
 }

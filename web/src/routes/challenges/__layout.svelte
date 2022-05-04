@@ -153,5 +153,7 @@
 	</nav>
 </div>
 <div class="min-h-screen">
-  <slot />
+	<div class="ctf-container container mx-auto mt-6">
+  	<slot />
+	</div>
 </div>

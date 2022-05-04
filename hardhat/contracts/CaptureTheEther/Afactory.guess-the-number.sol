@@ -10,7 +10,7 @@ contract ChallengeFactoyGuessTheNumber is ICTFFactory {
     }
 
     function getPrice() external pure returns (uint256) {
-        return 1 ether;
+        return 0.01 ether;
     }
 
 }
