@@ -17,8 +17,8 @@
 </script>
 
 <svelte:head>
-	<title>Home</title>
-	<meta name="description" content="Svelte demo app" />
+	<title>Ready h4cker0ne?</title>
+	<meta name="description" content="Learn solidity security hacking CTFs" />
 </svelte:head>
 
 <div class="
