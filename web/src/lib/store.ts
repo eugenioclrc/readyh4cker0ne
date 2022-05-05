@@ -61,14 +61,23 @@ function loadHooks() {
   }
   
   hooksSetup = true;
+  /*
   provider.on("network", (newNetwork, oldNetwork) => {
+    console.log({newNetwork, oldNetwork})
     if (oldNetwork) {
       setTimeout(() => {
         init();
-      }, 0);
+      }, 30);
     }
   });
+  */
 
+  window.ethereum.on('networkChanged', function(networkId){
+    setTimeout(() => {
+      document.location.reload();
+      // init();
+    }, 0);
+  });
 
   window.ethereum.on("accountsChanged", () => {
     setTimeout(() => {
