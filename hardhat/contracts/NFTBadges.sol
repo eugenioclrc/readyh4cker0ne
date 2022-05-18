@@ -3,6 +3,9 @@ pragma solidity 0.8;
 
 import "@openzeppelin/contracts/token/ERC1155/ERC1155.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
+import "@openzeppelin/contracts/utils/cryptography/ECDSA.sol";
+
+// WIP!
 
 contract CTFBadges is ERC1155, Ownable {
     mapping(address => mapping(uint256 => bool)) internal claimed;
